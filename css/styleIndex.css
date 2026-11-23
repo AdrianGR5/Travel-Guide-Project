@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI"; /* first choice font */
+}
+/*header*/
+/* blue bar at the top holding the logo and name */
+header { 
+    background-color: #0b6e94;
+    display: flex; /* puts the logo and name side by side in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /*keeps logo and txt apart*/
+    padding: 12px;
+    border-bottom: 5px solid #f0a81c; /* the gold line along the bottom of the header */
+}
+/*the logo image scaling*/
+.logo {
+    height: 80px;
+}
+/*text next to the logo*/
+.site-name {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+}
+main {
+    flex: 1;
+    display: flex;
+}
+/* Makes the middle section grow to fill the space between header and footer */
+.middle{
+    flex: 1;
+    background-image: linear-gradient(360deg, rgba(11, 110, 148, 0.8), rgba(60, 196, 180, 0.6)), url("../images/mount.jpg"); /*adds a gradient on top of the image*/
+    background-color: #2bb6e8;
+    background-size: cover;
+    background-position: center; 
+    color: white;
+    text-align: center; /*centers text*/
+    padding: 120px 20px;
+}
+/*Makes heading bigger*/
+.middle h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+/*makes golden line under the heading*/
+.middle h1::after {
+    content: "";
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    height: 5px;
+    background-color: #f0a81c;
+    margin: 18px auto 0;
+    border-radius: 3px;
+}
+/*makes middle paragraph*/
+.middle p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 750px; /*limits the length of the paragraph*/
+    margin: 20px auto 40px;
+}
+/*custom buttons taking the form of the html links*/
+.buttons{ /*buttons made by Lucian*/
+    display: inline-block; /* lets the link have width and padding but stay in a row */
+    width: 180px;
+    padding: 14px;  
+    margin: 10px;
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid white; /*makes border stroke*/
+    border-radius: 30px; 
+    transition: 0.3s;
+    text-decoration: none; /*removes line under the html links*/
+}
+/*makes it so whenever a cursor hovers over it, the buttons turn gold to indicate selection*/
+.buttons:hover, 
+.buttons:focus{ /*hover made by Lucian*/
+   background-color: #f0a81c; 
+   color: black;
+   border:#f0a81c
+}
+/*edits style of footer*/
+footer {
+    background-color: #1e293b; /*makes colour behind footer text*/
+    color: #ffffff;
+    text-align: center; /*aligns footer*/
+    padding: 15px 18px;
+    border-top: 5px solid #f0a81c;
+}

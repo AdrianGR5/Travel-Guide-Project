@@ -1,0 +1,103 @@
+body { /*background + fonts and size*/
+    margin: 0;
+    min-height: 100vh; 
+    font-family: "Segoe UI"; /*preferred font format*/
+      background-size: cover; /*scales the image to cover the entire background*/
+    background-repeat: no-repeat; 
+    background-position: center; /*centers the image*/
+    background-attachment: fixed; /*keeps the image in place when scrolling*/
+}
+
+
+/* header wrapper (centers everything + sits above gradient overlay) */
+header { 
+    background-color: #0b6e94; /*the blue background behind the logo and name*/
+    display: flex; /* puts the logo and name side by side in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /*keeps logo and txt apart*/
+    padding: 12px;
+    border-bottom: 5px solid #f0a81c; /* the gold line along the bottom of the header */
+}
+
+.header-left {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*the logo image scaling*/
+.logo {
+    height: 80px;
+    display: block;
+    margin: 0;
+}
+
+.home-link { /*the home link next to the logo*/
+    color: #f0a81c;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.home-link:hover { /*hover effect for the home link next to the logo*/
+    text-decoration: underline; /*adds an underline to the text when hovering over it*/
+    transform: scale(1.1.5); /*Enlargest text when hovering over it*/
+}
+
+/*text next to the logo*/
+.site-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {text-align: center; } /*centers the text "Welcome to Discover Ireland Registration" on the page*/
+h1, h2, h3  { text-shadow: 2px 2px 2px rgba(255, 162, 0, 0.8); } /*adds a shadow to the text*/
+h2 {text-align: center} /*centers the text "Please input your details below to get started:" on the page*/
+h3 {text-align: center} /*centers the text "Thank you for contacting us! We will get back to you as soon as possible." on the page*/
+body { color: white; } /*changes the color of the text to white*/
+p {text-align: center} /*centers the text "please input your details below to get started:" on the page*/
+img{ 
+    display: block; /*makes the image take up the full width of the page*/
+    margin-left: auto; /*centers the image on the page*/
+    margin-right: auto; /*centers the image on the page*/
+}
+form { /*centers the form on the page*/
+    display: flex; /*makes the form fields stack on top of each other*/
+    flex-direction: column; /*makes the form fields stack on top of each other*/
+    align-items: center; /*centers the form on the page*/
+    justify-content: center; /*centers the form on the page*/
+    margin-top: 20px; /*adds a margin to the top of the form*/
+    color: white; /*changes the color of the text in the form to white*/
+    margin-bottom: 10px; /*adds a margin to the bottom of the form*/
+}
+form input:not([type="submit"]) {
+    outline: 2px solid #f0a81c; /*adds a gold outline to the input fields*/
+    outline-offset: 0px; /*adds a gold outline to the input fields*/
+    border-radius: 5px; /*adds rounded corners to the input fields*/
+}
+a { /*centers the links on the page*/
+    display: block; /*makes the links take up the full width of the page*/
+    text-align: center; /*centers the links on the page*/
+    color: #f0a81c; /*changes the colour of the links to gold*/
+    text-decoration: none; /*removes the underline from the links*/
+    margin-top: 10px; /*adds a margin to the top of the links*/
+}
+body {
+    background-image: linear-gradient(360deg, #0b6e94, #3cc4b4);/*adds a gradient overlay to the background image*/
+    background-image: linear-gradient(360deg, rgba(11, 110, 148, 0.8), rgba(60, 196, 180, 0.6)), url("../images/mount.jpg"); /*adds a gradient overlay to the background image*/
+}
+footer {
+    background-color: #1e293b; /*makes colour behind footer text*/
+    color: #ffffff; /*changes the colour of the text in the footer*/
+    text-align: center; /*aligns footer*/
+    padding: 15px 15px; /*adds padding to the footer*/
+    border-top: 5px solid #f0a81c; /*adds a gold line to the top of the footer*/
+}
