@@ -71,5 +71,14 @@ a:visited {
     color: #ffdf70;
 }
 
-
+/* Phone screens */
+@media (max-width: 600px) {
+    main {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+}
 

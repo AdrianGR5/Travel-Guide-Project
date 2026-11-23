@@ -101,3 +101,14 @@ footer {
     padding: 15px 15px; /*adds padding to the footer*/
     border-top: 5px solid #f0a81c; /*adds a gold line to the top of the footer*/
 }
+
+/* Phone screens */
+@media (max-width: 600px) {
+    main {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+}
